@@ -1,0 +1,66 @@
+    1  ls -al
+    2  ll
+    3  pwd
+    4  pwd
+    5  ls -al
+    6  pwd
+    7  pwd
+    8  ll
+    9  bash --version
+   10  ls -al
+   11  pwd
+   12  brew install -y zsh
+   13  gcc
+   14  cd "/Users/shlok/WorkSpace/C/" && gcc main.c -o main && "/Users/shlok/WorkSpace/C/"main
+   15  gcc 
+   16  ls 
+   17  pwd
+   18  history
+   19  ¬whoami
+   20  whoami
+   21  ls 
+   22  cd WorkSpace/
+   23  ls
+   24  mkdir {C,CPP,Python}
+   25  ls
+   26  ls -lR 
+   27  cd C
+   28  ls
+   29  code .
+   30  gcc
+   31  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+   32  xcode-select --install
+   33  exit
+   34  vim /etc/hosts
+   35  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   36  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   37  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   38  sudo vim /etc/hosts
+   39  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   40  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   41  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   42  curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+   43  sudo vim /etc/hosts
+   44  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   45  /bin/bash install.sh 
+   46  echo $0
+   47  vim ~/.bash_profile 
+   48  cat ~/.bash_profile
+   49  source ~/.bash_profile 
+   50  brew install gcc
+   51  pwd
+   52  ls -altr
+   53  ll
+   54  cd WorkSpace/
+   55  ls
+   56  cd CPP
+   57  ls
+   58  cd ../C
+   59  ls
+   60  clear
+   61  brew install zsh 
+   62  brew uninstall zsh 
+   63  clear
+   64  pwd
+   65  history 
+   66  history > history.txt

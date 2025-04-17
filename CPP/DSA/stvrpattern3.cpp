@@ -72,12 +72,12 @@ cout<<endl;
 */
 int n;
 cin>> n;
-for(int i=0;i<n;i++){
+for(int i=0;i<n;i++){    //
 for(int j=n;j>=1;j--){
     cout<<" *";
 }
 cout<<endl;
 }
-
+cout<<"hi";
 return 0;
 }

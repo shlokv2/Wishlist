@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
+#include <algorithm>
 using namespace std;
 void countDigits()
 {
@@ -99,6 +101,96 @@ void armstrongNumber()
     else
         cout << dup << " is not an Armstrong Number" << endl;
 }
+void printAllDivisors()
+{
+    int n;
+    cout << "Enter a number: " << endl;
+    cin >> n;
+    vector<int> ls;
+    // 6* 6<=36
+    // 7 * 7 <=36 false
+    // O(sqrt(n))
+    for (int i = 1; i * i <= n; i++)
+    { // i<=sqrt(n) but more computational as it is a function in c++ itself
+        if (n % i == 0)
+        {
+            ls.push_back(i);
+            if ((n / i) != i)
+            {
+                ls.push_back(n / i);
+            }
+        }
+    }
+    // O (no of factors * log(no of factors)): n is the number of factors
+    sort(ls.begin(), ls.end());
+    // O(number of factors)
+    for (int y : ls)
+        cout << y << " ";
+}
+void checkForPrime()
+{
+    int n;
+    cout << "Enter a number: " << endl;
+    cin >> n;
+    int count = 0;
+    for (int i = 1; i * i <= n; i++)
+    {
+        if (n % i == 0)
+        {
+            count++;
+
+            if ((n / i) != i)
+            {
+                count++;
+            }
+        }
+    }
+    if (count == 2)
+        cout << "True";
+    else
+        cout << "False";
+}
+void gcd()
+{
+    int n1;
+    cout << "Enter a number: " << endl;
+    cin >> n1;
+    int n2;
+    cout << "Enter a number: " << endl;
+    cin >> n2;
+    for (int i = min(n1, n2); i >= 1; i--)
+    {
+        if (n1 % i == 0 && n2 % i == 0)
+        {
+            cout << i;
+            break;
+        }
+    }
+}
+void gcdEuclideanAlgorithm()
+{
+    int n1;
+    cout << "Enter a number: " << endl;
+    cin >> n1;
+    int n2;
+    cout << "Enter a number: " << endl;
+    cin >> n2;
+    while (n1 > 0 && n2 > 0)
+    {
+        if (n1 > n2)
+        {
+            n1 = n1 % n2;
+        }
+        else
+        {
+            n2 = n2 % n1;
+        }
+    }
+    if (n1 == 0)
+        cout << n2;
+    else
+        cout << n1;
+}
 
 int main()
 {
@@ -114,6 +206,9 @@ int main()
 
     // reverseNumber();
     // palindrome();
-    armstrongNumber();
+    // armstrongNumber();
+    // printAllDivisors();
+    // checkForPrime();
+    gcdEuclideanAlgorithm();
     return 0;
 }

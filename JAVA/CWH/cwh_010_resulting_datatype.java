@@ -1,4 +1,3 @@
-import java.util.*;
 public class cwh_010_resulting_datatype{
     public static void main(String args[]){
 
@@ -26,5 +25,4 @@ public class cwh_010_resulting_datatype{
     }
 }
 
-    }
-}
+    

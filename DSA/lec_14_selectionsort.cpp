@@ -36,7 +36,7 @@ void bubble_sort_optimized(int arr[], int n){
             didSwap=1;
             }
         }
-        if(didSwap=0){
+        if(didSwap==0){
             break;
         }
         cout<<"runs\n"; //to check how many times it runs

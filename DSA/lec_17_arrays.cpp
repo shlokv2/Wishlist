@@ -45,7 +45,7 @@ int secondLargest(int arr[],int n)
 }
 
 int main() {
-    int arr[]={1,2,4,7,7,5};  
+    int arr[]={10,10,10};  
     int n=sizeof(arr)/sizeof(arr[0]);
         int sS=secondSmallest(arr,n);
         int sL=secondLargest(arr,n);
